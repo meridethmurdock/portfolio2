@@ -4,8 +4,7 @@
 }
     .leftBox,
     .rightBox {
-        height: ; /* for the resize, margins of intro */
-        width: 11rem;
+        width: 15%;
         background-color: rgb(255, 212, 188);
         box-shadow: 0px 8px 30px 4px rgb(248, 244, 244) inset;
     }
@@ -18,9 +17,6 @@
 
             .socialsElements {
                 flex-direction: column;
-
-                /* justify-content: space-between; 
-                doesn't work */
             }
 
                 .socialLinks {
@@ -36,17 +32,14 @@
 
 .introduction {
     display: flex;
-    width: 47rem;
-    height: 22rem;
+    width: 70%;
     margin: 5rem;
     border: 3px solid rgb(255, 255, 255);
     box-shadow: -1px 1px 9px 1px rgb(255, 183, 142);
     }
 
     .profilePic {
-        width: 11rem;
-        height: 10rem; 
-        /* how to get it to not stretch? had to set width and height to prevent */
+        width: 25%;
         margin: auto 3rem;
     }
     .introText {
@@ -71,16 +64,17 @@ h2 {
             margin: 5rem auto;
             width: 80vw;
             flex-direction: column;
-            height: 40rem;
         }
         .profilePic {
             margin: 4rem auto;
             padding: 0; 
-            transform: scale(1.2);
+            transform: scale(1.5);
         }
         .introText {
             width: 70%;
             padding: 0;
             margin: 0 auto;
+            margin-bottom: 2rem;
             text-align: center;
         }
+}

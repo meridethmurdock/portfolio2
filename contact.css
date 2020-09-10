@@ -4,7 +4,7 @@
 }
     .leftBox,
     .rightBox {
-        width: 11rem;
+        width: 15vw;
         background-color: rgb(255, 212, 188);
         box-shadow: 0px 8px 30px 4px rgb(248, 244, 244) inset;
     }
@@ -13,19 +13,21 @@
             border: 2px solid white;
             width: 80%;
             margin: 50% auto; 
+            /* display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 20vh;  didn't work? */ 
+
         }
 
             .socialsElements {
                 flex-direction: column;
-
-                /* justify-content: space-between; 
-                doesn't work */
             }
 
                 .socialLinks {
                     display: flex; 
                     align-items: center;
-                    padding: 1.5rem;
+                    /* padding: 1.5rem; */
                 }
                 .githublogo,
                 .linkedinlogo,
@@ -36,22 +38,19 @@
 .mainContactBox {
 display: flex;
 border: 2px solid white;
-height: 23rem;
 width: 50%;
-margin:  4rem auto;
+margin: 4rem auto;
 background-color: rgb(245, 175, 175);
 box-shadow: -1px 1px 12px 1px rgb(125, 127, 233);  
 }
 
     .mainContactText {
-    width: 15rem;
+    width: 15rem; /* ok use of rem? */
     padding: 3rem;
     padding-top: 4rem;
     } 
     .mainContactForm {
     width: 50%;
-    /* couldn't get the input boxes to be 
-    on different lines without using <br> */
 
     /* couldn't use justify content */
     }
@@ -72,6 +71,11 @@ box-shadow: -1px 1px 12px 1px rgb(125, 127, 233);
                 height: 10rem;
                 color: black
             }
+
+                input [type=text], textarea {
+                    padding: 7px;
+                }
+
             .submit {
                 margin-left: 15rem;
                 width: 4rem;
@@ -97,12 +101,8 @@ box-shadow: -1px 1px 12px 1px rgb(125, 127, 233);
     }
 }
 
-
-
-
 @media (max-width: 800px) {
     .mainContactBox {
-        height: 35rem;
         flex-direction: column-reverse;
         width: 80%
     }
