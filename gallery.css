@@ -1,0 +1,24 @@
+.theGallery {
+    width: 100vw;
+    height: 7rem;
+    padding: 3rem 0rem;
+    font-size: 7rem;
+    letter-spacing: 2rem;
+    text-align: center;
+    opacity: 50%;
+}
+
+.pictureSection {
+    max-width: 85%;
+    margin: 0rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+    .pictureSectionElements {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+        .pics {
+            padding: 2rem;
+        }

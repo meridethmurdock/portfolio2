@@ -1,0 +1,319 @@
+
+.sideBars {
+    display: flex;
+    justify-content: space-between;
+}
+    .leftBox,
+    .rightBox {
+        height: 28.2rem; /* for the resize, margins of intro */
+        width: 11rem;
+        background-color: rgb(255, 212, 188);
+        box-shadow: 0px 8px 30px 4px rgb(248, 244, 244) inset;
+    }
+
+        .socialsBox {
+            border: 2px solid white;
+            width: 80%;
+            margin: 50% auto; 
+        }
+
+            .socialsElements {
+                flex-direction: column;
+
+                /* justify-content: space-between; 
+                doesn't work */
+            }
+
+                .socialLinks {
+                    display: flex; 
+                    align-items: center;
+                    padding: 1.5rem;
+                }
+                .githublogo,
+                .linkedinlogo,
+                .twitterlogo {
+                    padding-right: .5rem;
+                }
+
+
+.introduction {
+    display: flex;
+    width: 43rem;
+    height: 18rem;
+    margin: 5rem;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: -1px 1px 9px 1px rgb(255, 183, 142);
+    }
+
+    .profilePic {
+        width: 11rem;
+        padding: 4rem;
+    }
+    .introText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 3rem;
+    }
+
+
+.inBoxLinks:hover {
+    text-decoration: underline;
+}
+
+
+.pictureSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 90vw;
+    max-width: 100rem;
+    height: 40rem;
+    margin: 0 auto;
+    }
+
+    .pictureSectionElements {
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+        border: 3px solid rgb(255, 255, 255);
+        box-shadow: -1px 1px 25px 1px rgb(153, 245, 230);
+        padding: 4rem 2rem;
+    }
+    .galleryLink {
+        margin-top: 2rem;   
+    }
+
+
+.bottomRightBox,
+.bottomLeftBox {
+    height: 55rem;
+    width: 10rem;
+    background-color: rgb(202, 174, 221);
+    box-shadow: -1px 8px 30px 4px rgb(253, 253, 253) inset;
+
+}
+
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+    .upcomingBox {
+        display: flex;
+        width: 90%;
+        height: 18rem;
+        /* when i get rid of width or height, it doesnt affect it?*/
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: -1px 1px 12px 1px rgb(197, 116, 154);  
+        }
+        .upcomingPicture {
+            width: 300px;
+            height: 200px;
+            padding: 3.5rem;
+        }
+        .upcomingText {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            padding: 2rem;
+    }
+    
+    .mainContactBox {
+        display: flex;
+        border: 2px solid white;
+        height: 23rem;
+        width: 90%;
+        margin-bottom: 6rem;
+        background-color: rgb(245, 175, 175);
+        box-shadow: -1px 1px 12px 1px rgb(125, 127, 233);  
+    }
+
+        .mainContactText {
+            width: 15rem;
+            padding: 3rem;
+            padding-top: 4rem;
+        } 
+        .mainContactForm {
+            width: 50%;
+            /* couldn't get the input boxes to be 
+            on different lines without using <br> */
+
+            /* couldn't use justify content */
+            }
+
+            .name,
+            .message,
+            .submit {
+                margin-left: 4rem;
+                margin-top: 1rem;
+                background-color: rgb(255, 220, 220);
+                border: 1px solid black;
+            }
+                .name {
+                    margin-top: 5rem;
+                }
+                .message {
+                    width: 15rem;
+                    height: 10rem;
+                    color: black
+                }
+                .submit {
+                    margin-left: 15rem;
+                    width: 4rem;
+                } 
+                .finePrint {
+                    font-size: .8rem;
+                }
+                .submit:hover {
+                    cursor: pointer;
+                }
+                .name:focus,
+                .message:focus,
+                .submit:focus {
+                    outline: none;
+                }
+                ::placeholder {
+                    color: rgb(105, 105, 105);
+                }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1270px) {
+    .bottomLeftBox,
+    .bottomRightBox {
+        display: none;
+    }
+    .introduction {
+        margin: 5rem auto;
+    }
+
+    .pictureSection {
+        margin: 1rem auto
+    }
+    .pictureSectionElements {
+        flex-wrap: wrap;
+        margin: 7rem auto
+    }
+    .pictureSectionElements > img {
+        transform: scale(0.9);
+    }
+    .galleryLink{
+        margin-top: -5rem;
+    }
+    .middle {
+        width: 80%;
+        margin: 4rem auto;
+    }
+        .upcomingBox {
+            margin: 5rem auto;
+            width: 80vw;
+        }
+    
+
+@media (max-width: 1000px) {
+    .introduction {
+        margin: 5rem auto;
+        width: 80vw;
+        flex-direction: column;
+        height: 30rem;
+    }
+    .profilePic {
+        margin: 4rem auto;
+        padding: 0; 
+        transform: scale(1.2);
+    }
+    .introText {
+        width: 70%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .rightBox,
+    .leftBox {
+        display: none;
+    }
+    .middle {
+        width: 80%;
+        margin: 4rem auto;
+    }
+        .upcomingBox {
+            margin: 5rem auto;
+            width: 80vw;
+            flex-direction: column;
+            height: 30rem; 
+        }
+            .upcomingPicture {
+                margin: 4rem auto;
+                padding: 0; 
+                transform: scale(1.2);
+            }
+            .upcomingText {
+                width: 70%;
+                padding: 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+        .mainContactBox {
+            height: 35rem;
+            flex-direction: column-reverse;
+        }
+            .mainContactText {
+                padding-bottom: 0;
+                margin: 0rem auto;
+                text-align: left;
+            }
+            .mainContactForm {
+                margin: 2rem 0rem; 
+                /* cant use margin auto to keep it centered? */
+            }
+                .name {
+                    margin-top: 0rem;
+                    margin-left: 2.3rem;
+                }
+                .message {
+                    margin: 1rem 2.3rem;
+                    /* sad attempt at getting it centered */
+                }
+                h2 {
+                    margin-bottom: 1rem;
+    }
+
+@media (max-width: 700px) {
+    .introduction {
+        margin: 5rem auto;
+        width: 80vw;
+        flex-direction: column;
+        height: 30rem;
+    }
+    .profilePic {
+        margin: 4rem auto;
+        padding: 0; 
+        transform: scale(1.2);
+    }
+    .introText {
+        width: 70%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .pictureSection {
+        margin: 10rem auto
+    }
+    
+
+
+
+

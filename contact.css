@@ -1,0 +1,129 @@
+.sideBars {
+    display: flex;
+    justify-content: space-between;
+}
+    .leftBox,
+    .rightBox {
+        width: 11rem;
+        background-color: rgb(255, 212, 188);
+        box-shadow: 0px 8px 30px 4px rgb(248, 244, 244) inset;
+    }
+
+        .socialsBox {
+            border: 2px solid white;
+            width: 80%;
+            margin: 50% auto; 
+        }
+
+            .socialsElements {
+                flex-direction: column;
+
+                /* justify-content: space-between; 
+                doesn't work */
+            }
+
+                .socialLinks {
+                    display: flex; 
+                    align-items: center;
+                    padding: 1.5rem;
+                }
+                .githublogo,
+                .linkedinlogo,
+                .twitterlogo {
+                    padding-right: .5rem;
+                }
+
+.mainContactBox {
+display: flex;
+border: 2px solid white;
+height: 23rem;
+width: 50%;
+margin:  4rem auto;
+background-color: rgb(245, 175, 175);
+box-shadow: -1px 1px 12px 1px rgb(125, 127, 233);  
+}
+
+    .mainContactText {
+    width: 15rem;
+    padding: 3rem;
+    padding-top: 4rem;
+    } 
+    .mainContactForm {
+    width: 50%;
+    /* couldn't get the input boxes to be 
+    on different lines without using <br> */
+
+    /* couldn't use justify content */
+    }
+
+        .name,
+        .message,
+        .submit {
+            margin-left: 4rem;
+            margin-top: 1rem;
+            background-color: rgb(255, 220, 220);
+            border: 1px solid black;
+        }
+            .name {
+                margin-top: 5rem;
+            }
+            .message {
+                width: 15rem;
+                height: 10rem;
+                color: black
+            }
+            .submit {
+                margin-left: 15rem;
+                width: 4rem;
+            } 
+            .finePrint {
+                font-size: .8rem;
+            }
+            .submit:hover {
+                cursor: pointer;
+            }
+            .name:focus,
+            .message:focus,
+            .submit:focus {
+                outline: none;
+            }
+            ::placeholder {
+                color: rgb(105, 105, 105);
+            }
+                        
+@media (max-width: 1270px) {
+    .mainContactBox {
+        width: 80%
+    }
+}
+
+
+
+
+@media (max-width: 800px) {
+    .mainContactBox {
+        height: 35rem;
+        flex-direction: column-reverse;
+        width: 80%
+    }
+        .mainContactText {
+            padding-bottom: 0;
+            margin: 0rem auto;
+            text-align: left;
+        }
+        .mainContactForm {
+            margin: 2rem 0rem; 
+            /* cant use margin auto to keep it centered? */
+        }
+            .name {
+                margin-top: 0rem;
+                margin-left: 2.3rem;
+            }
+            .message {
+                margin: 1rem 2.3rem;
+                /* sad attempt at getting it centered */
+            }
+            h2 {
+                margin-bottom: 1rem;
+            }
+}

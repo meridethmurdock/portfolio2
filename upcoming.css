@@ -1,0 +1,161 @@
+h2 {
+    width: 100vw;
+    height: 14rem;
+    font-size: 6rem;
+    letter-spacing: 2rem;
+    text-align: center;
+    opacity: 50%;
+    margin: 2rem;
+}
+
+h3 {
+    margin: 2rem 0rem;
+    margin-left: 0;
+}
+
+
+.content {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+    .eventsBoxOne,
+    .eventsBoxTwo {
+        width: 70vw;
+        height: 20rem;
+        border: 3px solid rgb(255, 255, 255); 
+        margin: 4rem auto;
+        padding: 4rem 4rem;
+    }
+        .artShow,
+        .galleryPic {
+            width: 30%;
+        }
+
+            .artShow {
+                float: left;
+                padding-right: 3rem;
+            }
+
+            .galleryPic {
+                float: right;
+                text-align: right;
+                /* padding-right: 5rem; */
+            }
+
+        .eventsTextOne,
+        .eventsTextTwo {
+            display: inline-block;
+            width: 50%;
+        }
+            .eventsTextOne {
+                margin-left: 3rem;
+            }
+
+            .eventsTextTwo {
+                text-align: right;
+            }
+
+
+
+.events {
+    margin: 6rem auto;
+}
+    th {
+        height: 3rem;
+        text-align: left;
+        border: 2px solid rgb(224, 189, 123);
+    }  
+        .date {
+            width: 6rem;
+            padding: 1rem;
+        }
+        .city {
+            width: 7rem;
+            padding: 1rem;
+        }
+        .venue {
+            width: 10rem;
+            padding: 1rem;
+        }
+
+    td {
+        padding: 1rem;
+        border: 2px solid rgb(139, 177, 144);
+        /* how to get venue and time in the center? higher than the rest bc of button */
+    }  
+
+        button {
+            float: right;
+            background-color: white;
+            color: black;
+            margin-left: 6rem;
+            font-size: 1.1rem;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+
+
+
+@media (max-width: 1000px) {
+    h2 {
+        font-size: 4rem;
+        height: 5rem;
+    }
+    .content {
+        padding-top: 1rem;
+    }
+    .events {
+        transform: scale(.9);
+        width: 90vw;
+        margin-top: 1rem;
+        }
+    }
+
+@media (max-width: 800px) {
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .content {
+        margin: 1rem auto;
+        height: 70rem;
+    }
+
+        .eventsBoxOne,
+        .eventsBoxTwo {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .eventsBoxOne {
+            margin-top: 1rem;
+        }
+        .eventsBoxTwo {
+            flex-direction: column-reverse;
+        }
+
+                .galleryPic,
+                .artShow {
+                    margin: 4rem auto;
+                    transform: scale(2);
+                    padding: 0;
+                }
+                .eventsTextOne,
+                .eventsTextTwo {
+                    text-align: center;
+                    width: 100%;
+                    margin-left: 0rem;
+                }
+
+
+    .events {
+        transform: scale(.9);
+        width: 90vw;
+        margin-top: 1rem;
+    }
+}
