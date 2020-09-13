@@ -40,7 +40,8 @@ box-shadow: -1px 1px 12px 1px rgb(125, 127, 233);
         }
             .name {
                 padding: 5px 13px;
-                max-width: 60% /*?*/
+                max-width: 60% /*?*/;
+                min-width: 10px;
             }
             .message {
                 padding: 5px 13px;
