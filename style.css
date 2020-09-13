@@ -6,14 +6,15 @@ html {
 }
 
 body {
-    color: rgb(32, 92, 82);
+    color: rgb(227, 255, 250);
     margin: 0;
     padding: 0;
-    background-color: rgb(245, 212, 212);
+    background-color: rgb(92, 91, 91);
 }
 
 h1 {
     font-size: 3rem;
+    color: white;
 }
 
 h2 {
@@ -23,7 +24,7 @@ h2 {
 
  a {
     text-decoration: none;
-    color: rgb(223, 85, 119)
+    color: rgb(0, 0, 0)
 }
 
 .inBoxLinks {
@@ -43,29 +44,27 @@ li {
 }
 
 .mainPicture {
-    height: 12rem;
+    height: 32%;
     display: flex;
     justify-content: space-evenly;    
     align-items: center;
     background-image: url(pics/bg.jpg);
     background-position: center;
     background-size: cover;
-    
-    /* can't change the color of this here, 
-    can only change in targeting all links */
 }
     #name {
         font-size: 3rem;
         background-color: none;
+        color: white;
     }
 
 .navbar {
     display: flex;
     justify-content: space-evenly;    
     align-items: center;
-    background-color: pink;
+    background-color: rgb(238, 237, 237);
     height: 3rem;
-    box-shadow: 0px 9px 20px rgb(255, 255, 255);
+    box-shadow: 0px 9px 20px rgb(207, 206, 206);
 }
     .navbarLinks:hover {
         text-decoration: underline;
@@ -75,8 +74,8 @@ li {
 .footer {
     display: flex;
     justify-content: space-between;
-    height: 4rem;
-    background-color: rgb(255, 183, 219);
+    /* height: 4rem; */
+    background-color: rgb(110, 110, 110);
 }
     .footerLeft,
     .footerRight {
@@ -118,5 +117,31 @@ li {
         width: 30%;
         margin-left: 0rem;
     }
+}
+
+@media (max-width: 576px) {
+    #name {
+        font-size: 1.5rem;
+    }
+    .mainPicture {
+        height: 15%;
+    }
+    .navbar {
+        height: 5%;
+        font-size: 13px;
+    }
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footerLeft {
+        width: 100%;
+    }
+    .footerRight {
+        margin: 0;
+        padding: 0;
+        justify-items: space-evenly;
+       
+    }
+
 }
 

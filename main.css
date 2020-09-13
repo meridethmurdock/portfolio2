@@ -54,9 +54,13 @@
         padding: 4rem 2rem;
     }
 
+        
+
     .galleryLink {
         margin-top: 2rem;   
     }
+
+    
 
 
 .bottomRightBox,
@@ -112,10 +116,6 @@
         } 
         .mainContactForm {
             width: 50%;
-            /* couldn't get the input boxes to be 
-            on different lines without using <br> */
-
-            /* couldn't use justify content */
             }
 
             .name,
@@ -181,10 +181,19 @@
         margin: 1rem auto
     }
     .pictureSectionElements {
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
         margin: 7rem auto;
     }
     
+    .help {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .help > img {
+        padding: 2rem;
+    }
     
 
     .pictureSectionElements > img {

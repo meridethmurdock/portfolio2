@@ -1,5 +1,4 @@
 h2 {
-    width: 100vw;
     font-size: 6rem;
     letter-spacing: 2rem;
     text-align: center;
@@ -68,7 +67,6 @@ h3 {
     td {
         padding: 1rem;
         border: 2px solid rgb(139, 177, 144);
-        /* how to get venue and time in the center? higher than the rest bc of button */
     }  
 
         button {
@@ -92,6 +90,16 @@ h3 {
     .content {
         padding-top: 1rem;
     }
+    .venue-child {
+        display: flex;
+        flex-direction: column;
+        margin-top: rem;
+    }
+    button {
+        margin-top: 1rem;
+        padding: 0px 30px;
+        align-self: center;
+    }
     .events {
         transform: scale(.9);
         margin-top: 6rem;
@@ -104,7 +112,7 @@ h3 {
 @media (max-width: 800px) {
 
     h2 {
-        font-size: 2rem;
+        font-size: 1rem;
         margin: 2rem auto;
     }
 
