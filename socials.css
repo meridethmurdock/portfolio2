@@ -1,0 +1,21 @@
+.socialsBox2 {
+    display: flex;
+    align-self: space-between;  
+    padding: 19px;  
+    }
+        .socialsBox {
+            border: 2px solid white;
+            width: 80%;
+            margin: 50% auto; 
+        }
+                .socialLinks {
+                    display: flex; 
+                    align-items: center;
+                    padding: 14%;
+                }
+                .githublogo,
+                .linkedinlogo,
+                .twitterlogo {
+                    padding-right: .5rem;
+                }
+

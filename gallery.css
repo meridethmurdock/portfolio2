@@ -22,3 +22,10 @@
         .pics {
             padding: 2rem;
         }
+
+
+@media (max-width: 1000px) {
+    .theGallery {
+        padding-bottom: 10rem;
+    }
+}
