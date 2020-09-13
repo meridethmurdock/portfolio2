@@ -121,7 +121,7 @@ li {
 
 @media (max-width: 576px) {
     #name {
-        font-size: 1.5rem;
+        font-size: 25px;
     }
     .mainPicture {
         height: 15%;
@@ -134,13 +134,12 @@ li {
         flex-direction: column-reverse;
     }
     .footerLeft {
-        width: 100%;
+        width: 90vw;
     }
     .footerRight {
         margin: 0;
         padding: 0;
         justify-items: space-evenly;
-       
     }
 
 }
