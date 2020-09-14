@@ -1,5 +1,5 @@
 h2 {
-    font-size: 6rem;
+    font-size: 5rem;
     letter-spacing: 2rem;
     text-align: center;
     opacity: 50%;
@@ -113,40 +113,31 @@ h3 {
 
     h2 {
         font-size: 1rem;
-        margin: 2rem auto;
-    }
-
-    .content {
-        margin: 1rem auto;
-        height: 70rem;
+        padding: 0rem 0rem;
     }
 
         .eventsBoxOne,
         .eventsBoxTwo {
-            width: 60%;
+            width: 50%;
             display: flex;
             flex-direction: column;
-        }
-
-        .eventsBoxOne {
-            margin-top: 1rem;
+            margin: 1rem auto;
         }
         .eventsBoxTwo {
             flex-direction: column-reverse;
         }
-
-                .galleryPic,
-                .artShow {
-                    margin: 3rem auto;
-                    transform: scale(2);
-                    padding: 0;
-                }
-                .eventsTextOne,
-                .eventsTextTwo {
-                    text-align: center;
-                    width: 100%;
-                    margin-left: 0rem;
-                }
+            .galleryPic,
+            .artShow {
+                margin: 3rem auto;
+                transform: scale(2);
+                padding: 0;
+            }
+            .eventsTextOne,
+            .eventsTextTwo {
+                text-align: center;
+                width: 100%;
+                margin-left: 0rem;
+            }
 
 
     .events {
@@ -156,5 +147,29 @@ h3 {
     }
     button {
         margin-left: 0rem;
+    }
+}
+
+@media (max-width: 600px){
+    .content {
+        max-width: 80vw;
+        padding: 0;
+        margin: auto;
+        display: flex;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding: 0rem;
+        justify-content: center;
+        margin: 2rem auto;
+    }
+
+    .galleryPic,
+    .artShow{
+        transform: scale(4);
+    }
+    h2 {
+        letter-spacing: 1rem;
     }
 }

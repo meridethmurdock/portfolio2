@@ -1,11 +1,11 @@
 .theGallery {
-    width: 100vw;
-    height: 7rem;
-    padding: 3rem 0rem;
     font-size: 7rem;
     letter-spacing: 2rem;
     text-align: center;
     opacity: 50%;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
 .pictureSection {
@@ -17,6 +17,7 @@
     .pictureSectionElements {
         display: flex;
         flex-wrap: wrap;
+        max-width: 100%;
         justify-content: space-evenly;
     }
         .pics {
@@ -26,6 +27,22 @@
 
 @media (max-width: 1000px) {
     .theGallery {
-        padding-bottom: 10rem;
+        padding-bottom: 3rem;
+        letter-spacing: 1rem;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .theGallery {
+        font-size: 30px;
+        justify-content: space-around;
+        color: white;
+        margin: 2rem 0;
+        padding: 0;
+    }
+    .pics {
+        transform: scale(0.6);
+        padding: 0rem;
     }
 }

@@ -4,9 +4,9 @@
 }
     .leftBox,
     .rightBox {
-        width: 15vw;
-        background-color: rgb(255, 212, 188);
-        box-shadow: 0px 8px 30px 4px rgb(248, 244, 244) inset;
+        width: 15%;
+        background-color: rgb(90, 90, 90);
+        box-shadow: 0px 8px 30px 4px rgb(61, 61, 61) inset;
     }
 
  
@@ -17,8 +17,8 @@ border: 2px solid white;
 width: 50%;
 padding: 5vw;
 margin: 4rem auto;
-background-color: rgb(245, 175, 175);
-box-shadow: -1px 1px 12px 1px rgb(125, 127, 233);  
+background-color: rgb(116, 112, 112);
+box-shadow: -1px 1px 12px 1px rgb(241, 241, 241);  
 }
 
     .mainContactText {
@@ -35,12 +35,12 @@ box-shadow: -1px 1px 12px 1px rgb(125, 127, 233);
         .name,
         .message,
         .submit {
-            background-color: rgb(255, 220, 220);
+            background-color: rgb(240, 240, 240);
             border: 1px solid black;
         }
             .name {
                 padding: 5px 13px;
-                max-width: 60% /*?*/;
+                max-width: 60%;
             }
 
             .message {

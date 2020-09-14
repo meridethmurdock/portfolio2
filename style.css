@@ -6,10 +6,10 @@ html {
 }
 
 body {
-    color: rgb(227, 255, 250);
+    color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
-    background-color: rgb(92, 91, 91);
+    background-color: rgb(68, 68, 68);
 }
 
 h1 {
@@ -29,7 +29,7 @@ h2 {
 
 .inBoxLinks {
     text-decoration: underline;
-    color: rgb(32, 92, 82);
+    color: rgb(255, 255, 255);
 }
 
 ul {
@@ -62,10 +62,13 @@ li {
     display: flex;
     justify-content: space-evenly;    
     align-items: center;
-    background-color: rgb(238, 237, 237);
+    background-color: rgb(190, 190, 190);
     height: 3rem;
     box-shadow: 0px 9px 20px rgb(61, 61, 61);
 }
+    .navbarLinks {
+        color: black;
+    }
     .navbarLinks:hover {
         text-decoration: underline;
     }
@@ -122,14 +125,13 @@ li {
 @media (max-width: 576px) {
     #name {
         font-size: 25px;
-        color: red;
     }
     .mainPicture {
         height: 20%;
     }
     .navbar {
         height: 5%;
-        font-size: 13px;
+        font-size: 17px;
     }
     .footer {
         flex-direction: column-reverse;
@@ -150,5 +152,4 @@ li {
 
 } 
 
-}
 
