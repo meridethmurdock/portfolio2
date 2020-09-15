@@ -113,7 +113,7 @@ li {
     .footerLeft {
         width: 70%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-right: 0rem;
     }
     .footerRight {
@@ -137,7 +137,8 @@ li {
         flex-direction: column-reverse;
     }
     .footerLeft {
-        width: 90vw;
+        font-size: .6rem;
+        margin: 0;
     }
     .footerRight {
         margin: 0;
