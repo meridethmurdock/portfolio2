@@ -58,3 +58,14 @@ h2 {
             text-align: center;
         }
 }
+
+@media (max-width: 600px) {
+    .profilePic {
+        transform: scale(2.3);
+    }
+    .introText {
+        font-size: 1em;
+        padding: 0;
+        text-align: left;
+    }
+}
