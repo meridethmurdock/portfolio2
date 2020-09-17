@@ -5,6 +5,10 @@ html {
     padding: 0;
 }
 
+img {
+    max-width: 100%
+}
+
 body {
     color: rgb(255, 255, 255);
     margin: 0;
@@ -80,6 +84,7 @@ li {
 }
     .footerLeft,
     .footerRight {
+        padding: 1rem;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -116,7 +121,7 @@ li {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
     #name {
         font-size: 3rem;
     }

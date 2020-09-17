@@ -70,6 +70,7 @@
     .upcomingBox {
         display: flex;
         align-self: center;
+        align-items: center;
         width: 60vw;
         border: 2px solid rgb(255, 255, 255);
         box-shadow: -1px 1px 12px 1px rgb(188, 187, 255);  
@@ -162,14 +163,16 @@
     }
     .pictureSectionElements {
         flex-wrap: wrap;  
+        padding: 15px;
     }
     .pic-img {
-        flex-basis: 50%;
+        margin: 15px;
         display: flex;
         justify-content: center;
     }
     .pic-img > img {
         padding: 2rem;
+        max-width: 100%;
     }
     .upcomingBox {
         margin: 2rem auto;
@@ -207,8 +210,8 @@
         }
             .upcomingPicture {
                 margin: 4rem auto;
-                padding: rem; 
                 transform: scale(1.8);
+                align-self: flex-end;
             }
             .upcomingText {
                 width: 70%;
@@ -217,10 +220,11 @@
                 margin: 0 auto;
             }
         }
-@media (max-width: 700px) {
+
+@media (max-width: 576px) {
 
     .pictureSection {
-        width: 80%
+        width: 70%
     }
     .mainContactBox {
         flex-direction: column-reverse;
