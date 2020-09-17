@@ -1,16 +1,14 @@
 h2 {
-    font-size: 5rem;
+    font-size: 3rem;
     letter-spacing: 2rem;
     text-align: center;
     opacity: 50%;
-    margin: 2rem;
+    padding-top: 2rem;
 }
 
 h3 {
     margin: 2rem 0rem;
-    margin-left: 0;
 }
-
 
 .content {
     display: flex;
@@ -21,7 +19,7 @@ h3 {
         width: 70vw;
         border: 3px solid rgb(255, 255, 255); 
         margin: 4rem auto;
-        padding: 4rem 4rem;
+        padding: 4rem;
         display: flex;
         justify-content: space-evenly;
     }
@@ -47,20 +45,16 @@ h3 {
     margin: 6rem auto;
 }
     th {
-        height: 3rem;
         text-align: left;
         border: 2px solid rgb(224, 189, 123);
     }  
         .date {
-            width: 3rem;
             padding: 1rem;
         }
         .city {
-            width: 7rem;
             padding: .5rem;
         }
         .venue {
-            width: 10rem;
             padding: 1rem;
         }
 
@@ -74,7 +68,7 @@ h3 {
             background-color: white;
             color: black;
             margin-left: 6rem;
-            font-size: 1.1rem;
+            font-size: .9rem;
         }
         button:hover {
             cursor: pointer;
@@ -88,12 +82,11 @@ h3 {
         height: 5rem;
     }
     .content {
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
     .venue-child {
         display: flex;
         flex-direction: column;
-        margin-top: rem;
     }
     button {
         margin-top: 1rem;
@@ -104,6 +97,7 @@ h3 {
         transform: scale(.9);
         margin-top: 6rem;
         }
+
         button {
             margin-left: 0rem;
         }
@@ -112,8 +106,8 @@ h3 {
 @media (max-width: 800px) {
 
     h2 {
-        font-size: 1rem;
-        padding: 0rem 0rem;
+        font-size: 2rem;
+        padding: 1rem 0rem;
     }
 
         .eventsBoxOne,
@@ -130,15 +124,12 @@ h3 {
             .artShow {
                 margin: 3rem auto;
                 transform: scale(2);
-                padding: 0;
             }
             .eventsTextOne,
             .eventsTextTwo {
                 text-align: center;
                 width: 100%;
-                margin-left: 0rem;
             }
-
 
     .events {
         transform: scale(.9);
@@ -152,24 +143,36 @@ h3 {
 
 @media (max-width: 600px){
     .content {
-        max-width: 80vw;
-        padding: 0;
+        padding: 1rem;
         margin: auto;
-        display: flex;
     }
 
     h2 {
-        font-size: 1.5rem;
-        padding: 0rem;
         justify-content: center;
-        margin: 2rem auto;
+        padding: 1rem;
+        margin-bottom: 0;
     }
 
     .galleryPic,
     .artShow{
         transform: scale(4);
+        padding: 1rem;
     }
     h2 {
         letter-spacing: 1rem;
+    }
+}
+
+@media (min-width: 1px) {
+    h2 {
+        font-size: 25px;
+        letter-spacing: .5rem;
+    }
+    .galleryPic,
+    .artShow {
+        margin: 1rem auto;
+    }
+    td {
+        padding: 12px;
     }
 }

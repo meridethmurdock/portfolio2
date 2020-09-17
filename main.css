@@ -39,7 +39,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
     margin: 10% auto;
     width: 90vw;
     }
@@ -50,7 +49,6 @@
         border: 3px solid rgb(255, 255, 255);
         box-shadow: -1px 1px 25px 1px rgb(205, 255, 222);
         padding: 4rem 2rem;
-        margin: 3 auto;
     }
     .galleryLink {
         margin-top: 2rem;   
@@ -59,7 +57,6 @@
 
 .bottomRightBox,
 .bottomLeftBox {
-    height: 55rem;
     width: 10rem;
     background-color: rgb(58, 58, 58);
         box-shadow: 0px 8px 30px 4px rgb(61, 61, 61) inset;
@@ -80,7 +77,6 @@
         .upcomingPicture {            
             padding: 2rem;
             width: 30%;
-
         }
         .upcomingText {
             display: flex;
@@ -167,22 +163,19 @@
     .pictureSectionElements {
         flex-wrap: wrap;  
     }
-    .help {
+    .pic-img {
         flex-basis: 50%;
         display: flex;
         justify-content: center;
     }
-    .help > img {
+    .pic-img > img {
         padding: 2rem;
     }
     .upcomingBox {
         margin: 2rem auto;
         width: 80vw;
     }
-    .upcomingPicture {
-        width: 70%;
-    }
-    
+
 
 @media (max-width: 1000px) {
     .introduction {
@@ -192,21 +185,14 @@
         height: 60%;
     }
     .profilePic {
-        margin: 4rem auto;
+        margin: 2rem auto;
         padding: 0; 
     }
     .introText {
-        width: 70%;
-        padding: 0;
-        margin: 0 auto;
+        padding: 2rem;
         text-align: center;
     }
-    .help {
-        display: flex;
-        flex-basis: 50%;
-        flex-wrap: wrap;
-    }
-    .help > img {
+    .pic-img > img {
         padding: 1rem;
     }
     .rightBox,
@@ -214,65 +200,36 @@
         display: none;
     }
     .middle {
-        width: 80%;
-        margin: 4rem auto;
+        margin: 1rem auto;
     }
         .upcomingBox {
-            margin: 5rem auto; 
             flex-direction: column;
         }
             .upcomingPicture {
                 margin: 4rem auto;
-                padding: 0; 
-                transform: scale(1.2);
+                padding: rem; 
+                transform: scale(1.8);
             }
             .upcomingText {
                 width: 70%;
-                padding: 0;
-                margin: 0 auto;
+                padding-bottom: 2rem;
                 text-align: center;
+                margin: 0 auto;
             }
         }
 @media (max-width: 700px) {
 
-    .introduction {
-        margin: 5rem auto;
-        width: 80vw;
-        flex-direction: column;
-    }
-    .profilePic {
-        margin: 1rem auto;
-        padding: 0; 
-        transform: scale(.7);
-    }
-    .introText {
-        width: 70%;
-        padding: 0;
-        margin: 0 auto;
-        text-align: center;
-    }
     .pictureSection {
         width: 80%
-    }
-    .upcomingPicture {
-        transform: scale(.7);
-        margin: 1rem auto;
-    }
-    .mainContactBox {
-        width: 90%;
     }
     .mainContactBox {
         flex-direction: column-reverse;
     }
     .mainContactText {
         margin: 1rem auto;
-        font-size: 14px;
     }
     .finePrint {
-        font-size: 12px;
-    }
-    .middle{
-        display: block;
+        font-size: 13px;
     }
 }
     

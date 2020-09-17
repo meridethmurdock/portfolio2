@@ -1,7 +1,6 @@
 .theGallery {
-    font-size: 7rem;
+    font-size: 5rem;
     letter-spacing: 2rem;
-    text-align: center;
     opacity: 50%;
     margin: 3rem;
     display: flex;
@@ -21,28 +20,38 @@
         justify-content: space-evenly;
     }
         .pics {
-            padding: 1rem;
+        padding: 1rem;
         }
 
 
-@media (max-width: 1000px) {
+ @media (max-width: 1000px) {
     .theGallery {
         padding-bottom: 3rem;
         letter-spacing: 1rem;
-
+        font-size: 4rem;
     }
 }
 
 @media (max-width: 700px) {
     .theGallery {
-        font-size: 30px;
-        justify-content: space-around;
-        color: white;
+        font-size: 3rem;
         margin: 2rem 0;
         padding: 0;
     }
     .pics {
-        transform: scale(0.6);
-        padding: 0rem;
+        transform: scale(.9);
+        padding: 1rem;
     }
 }
+
+@media (min-width: 1px) {
+    .theGallery {
+        font-size: 25px;
+        letter-spacing: .7rem;
+    }
+
+    .pics {
+        transform: scale(.5);
+        padding: 0;
+    }
+} 

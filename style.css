@@ -54,7 +54,6 @@ li {
 }
     #name {
         font-size: 3rem;
-        background-color: none;
         color: white;
     }
 
@@ -78,8 +77,6 @@ li {
     display: flex;
     justify-content: space-between;
     background-color: rgb(110, 110, 110);
-    margin-bottom: 1px;
-
 }
     .footerLeft,
     .footerRight {
@@ -112,9 +109,6 @@ li {
     }
     .footerLeft {
         width: 70%;
-        display: flex;
-        justify-content: space-evenly;
-        margin-right: 0rem;
     }
     .footerRight {
         width: 30%;
@@ -122,23 +116,19 @@ li {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 500px) {
     #name {
-        font-size: 25px;
+        font-size: 3rem;
     }
     .mainPicture {
-        height: 20%;
-    }
-    .navbar {
-        height: 5%;
-        font-size: 17px;
+        height: 30%;
     }
     .footer {
         flex-direction: column-reverse;
     }
     .footerLeft {
-        font-size: .6rem;
-        margin: 0;
+        font-size: 1rem; 
+        margin: 0; 
     }
     .footerRight {
         margin: 0;
@@ -148,7 +138,11 @@ li {
 
 @media (min-width: 1px) {
     #name {
-        font-size: 15px;
+        font-size: 20px;
+    }
+    .footerLeft,
+    .footerRight {
+        font-size: 13px;
     }
 
 } 
